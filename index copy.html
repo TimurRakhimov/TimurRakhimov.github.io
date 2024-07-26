@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Основные стили */
+      body {
+        font-family: "PT Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+      }
+
+      /* Стили для контейнера с карточками */
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /* Ширина контейнера занимает всю доступную ширину */
+        justify-content: space-between;
+        /* Равномерное распределение между карточками */
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      /* Стили для карточки */
+      .card {
+        position: relative;
+        width: calc(33% - 20px);
+        /* Ширина карточки - 33% минус отступы */
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Стили для изображения в карточке */
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      /* Стили для текста внутри карточки */
+      .card-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      /* Показываем текст при наведении на карточку */
+      .card:hover .card-text {
+        transform: translateY(0);
+      }
+
+      .card-text h3 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      .card-text p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      /* Медиа-запросы для адаптивности */
+      @media (max-width: 768px) {
+        .card {
+          width: calc(50% - 20px);
+          /* На мобильных устройствах две карточки в ряд */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          width: 100%;
+          /* На очень узких экранах карточки занимают всю ширину */
+        }
+      }
+    </style>
+    <title>Шесть адаптивных карточек в две колонки по 33% ширины</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <a href="/atonet.html" >
+          <img src="/images/imgweb/1.png" alt="Фото 1" />
+          <div class="card-text">
+            <h5>Платформа обслуживания участников</h5>
+            <p>
+              С помощью платформы участники могут получать документы,
+              осуществлять платежи, назначать онлайн-встречи и получать доступ к
+              отраслевым обновлениям.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/nabiz.html" >
+          <img src="/images/imgweb/2.png" alt="Фото 2" />
+          <div class="card-text">
+            <h5>E-Nabiz</h5>
+            <p>
+              Cистема личной медицинской документации. Приложение созданное для
+              здравоохранения Турецкой республики.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/aguapro.html" >
+          <img src="/images/imgweb/3.png" alt="Фото 3" />
+          <div class="card-text">
+            <h5>AquaPro</h5>
+            <p>
+              Передовая команда мировых экспертов для решений в сфере
+              аква-культуры.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/haihai.html" >
+          <img src="/images/imgweb/4.png" alt="Фото 4" />
+          <div class="card-text">
+            <h5>Hayhay</h5>
+            <p>платежная платформа нового поколения</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/daita.html" >
+          <img src="/images/imgweb/5.png" alt="Фото 5" />
+          <div class="card-text">
+            <h5>DAITA CHECK</h5>
+            <p>
+              Автоматизированная система создания рассылки е-мейлов
+              предпринимателям, профессионалам, и экспертам в индустрии
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="/leadcape.html" >
+          <img src="/images/imgweb/6.png" alt="Фото 6" />
+          <div class="card-text">
+            <h5>LEAD CAIP</h5>
+            <p>Система таргетированного поиска контактов из B2B сегмента</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
