@@ -19,9 +19,6 @@ body {
 .header-logoses{
   width: 60%;
 }
-.header__nav-list{
-  margin: 0px;
-}
 .container {
   width: 90%;
   margin: 0 auto;
@@ -36,9 +33,9 @@ ul {
 }
 ul li {
   font-size: 18px;
-  line-height: normal;
+  line-height: 18px;
   position: relative;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 .dipoz li::before {
   color: white;
@@ -73,7 +70,7 @@ ul li {
  
 .header-block {
   display: flex;
-  height: 60vh;
+  height: 68vh;
 }
 
 .block-1 {
