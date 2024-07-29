@@ -529,7 +529,12 @@ a {
 .mobilePip {
   display: none;
 }
-
+  .header__nav-list-item {
+    margin: 0;
+  }
+  .header__nav{
+    margin: 8px;
+  }
 .mapsesTop{
   display: flex;
   justify-content: space-between;
@@ -609,6 +614,9 @@ a {
 @media screen and (max-width: 450px) {
   .header-block {
     display: inline-block;
+  }
+  .actives{
+    padding: 0;
   }
   .block-1 {
     width: 150px;

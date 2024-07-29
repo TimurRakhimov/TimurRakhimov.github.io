@@ -184,6 +184,9 @@ button {
 .companyBoun-block-2{
   width: 70%;
 }
+.header__nav-list-item {
+  margin: 0;
+}
 .soniImf{
   width: 300px;
 }
@@ -644,6 +647,9 @@ a {
 @media screen and (max-width: 450px) {
   .header-block {
     display: inline-block;
+  }
+  .actives{
+    padding: 0;
   }
   .block-1 {
     width: 150px;
