@@ -83,6 +83,9 @@ ul li {
 .block-2 span{
   opacity: 0.6;
 }
+.header__nav-list-item {
+  margin: 0;
+}
 .link-as {
   list-style: none;
 }
@@ -94,6 +97,9 @@ ul li {
   border-radius: 20px;
   background-color: #1b45db;
   color: white;
+}
+.header__nav-list-item {
+  margin: 0;
 }
 .header-blockLink {
   gap: 10%;
@@ -646,6 +652,9 @@ a {
 @media screen and (max-width: 450px) {
   .header-block {
     display: inline-block;
+  }
+  .actives{
+    padding: 0;
   }
   .block-1 {
     width: 150px;

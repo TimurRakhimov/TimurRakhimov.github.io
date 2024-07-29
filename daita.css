@@ -118,7 +118,9 @@ button {
   border-radius: 20px;
   border: 0;
 }
-
+.header__nav-list-item {
+  margin: 0;
+}
 .title01 {
   font-size: 14vh;
   width: 50%;
@@ -566,6 +568,9 @@ a {
 @media screen and (max-width: 700px) {
   .footerright {
     display: inline-block;
+  }
+  .actives{
+    padding: 0;
   }
   .companyBoun-block-1{
     width: 100%;
