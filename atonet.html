@@ -47,6 +47,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script>!function(a,m,o,c,r,m){a[o+c]=a[o+c]||{setMeta:function(p){this.params=(this.para
+  ms||[]).concat([p])}},a[o+r]=a[o+r]||function(f){a[o+r].f=(a[o+r].f||[]).concat([f])},a[o+r]({id:"1
+  385302",hash:"31b6fa853397fe9de068069f1f5b0b6a",locale:"ru"}),a[o+m]=a[o+m]||functi
+  on(f,k){a[o+m].f=(a[o+m].f||[]).concat([[f,k]])}}(window,0,"amo_forms_","params","load","loaded");</script>
+  <script id="amoforms_script_1385302" async="async" charset="utf-8"
+  src="https://forms.amocrm.ru/forms/assets/js/amoforms.js?1722504159"></script>
   </head>
 
   <body>
@@ -98,10 +104,56 @@
                     </ul>
                   </nav>
 
-                  <div class="header__navig">
-                    <a href="" class="lang">RU</a>
-                    <a class="fprn" href="index.html#form">Обратный звонок</a>
-                  </div>
+                  <div class="header__navig" style="display: flex; ">
+                  <div class="gtranslate_wrapper lang" style="color: white !important;"></div>
+
+<script>
+    window.gtranslateSettings = {
+        "default_language": "ru",
+        "detect_browser_language": true, 
+        "languages": ["ru", "en"],
+        "wrapper_selector": ".gtranslate_wrapper"
+    };
+
+    // Добавляем стиль для переключателей языков
+    var style = document.createElement('style');
+    style.innerHTML = `
+        .gtranslate_wrapper a {
+            color: white !important;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Функция для скрытия кнопки текущего языка
+    function hideCurrentLanguageButton() {
+        // Получаем текущий язык из настроек или атрибута lang элемента html
+        var currentLang = document.documentElement.lang || window.gtranslateSettings.default_language;
+        var buttons = document.querySelectorAll('.gtranslate_wrapper a');
+
+        buttons.forEach(function(button) {
+            // Проверяем атрибут href кнопки на наличие текущего языка
+            if (button.href.includes('/' + currentLang + '/')) {
+                button.style.display = 'none';
+            } else {
+                button.style.display = 'inline'; // Показываем остальные кнопки
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        hideCurrentLanguageButton();
+    });
+
+    // Проверяем изменения языка (если механизм смены языка динамический)
+    var observer = new MutationObserver(hideCurrentLanguageButton);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+</script>
+
+<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
+
+                  <a class="fprn" href="/index.html#form">Обратный звонок</a>
+                </div>
                 </div>
               </div>
               <button type="button" class="header__btn js-btn-menu-toggle">
@@ -119,13 +171,7 @@
                     ></ul>
                   </nav>
 
-                  <a
-                    itemprop="email"
-                    href="/index.html"
-                    class="header__menu-link O3"
-                  >
-                    RU
-                  </a>
+                  <div  class="gtranslate_wrapper header__menu-link O3" style="color: white !important;"></div>
                 </div>
               </div>
             </header>
@@ -141,7 +187,8 @@
         </div>
         <div class="block-2">
           <p>
-            Оптимизация обслуживания членов: Цифровая трансформация Торгово-промышленной палаты Анкары
+            Оптимизация обслуживания членов: Цифровая трансформация Анкарской
+            Торгово-промышленной палаты
           </p>
           <span
             >С помощью платформы участники могут получать документы,
@@ -595,9 +642,7 @@
                 </p>
               </div>
               <div class="form-right">
-                <a class="formTXTNumber formTXTNumbers" href="tel:+77767772907"
-                  >+7 (776) 777-29-07</a
-                >
+                
                 <a href="https://wa.me/77767772907" class="formTXTNumber"
                   ><img src="/whatsapp.png" width="90" alt=""
                 /></a>
@@ -614,7 +659,7 @@
           <div class="footerContent">
             <div class="formleft">
               <div class="footerLogo">
-                <img src="/footerLogo.png" alt="" />
+                <img src="/logo.png" alt="" />
               </div>
               <p class="footerTXT">
                 Компания, способная предоставить любые инженерные решения и
@@ -653,12 +698,15 @@
                 <h3>СВЯЖИТЕСЬ С НАМИ</h3>
                 <div>
                   <a class="footer-link-bt" href="https://wa.me/77767772907"
-                    ><img src="/whitewh.png" alt=""
+                  ><img src="/whitewh.png" alt=""
                   /></a>
                   <a class="footer-link-bt" href="https://t.me/+77767772907"
-                    ><img src="/whitetg.png" alt=""
+                  ><img src="/whitetg.png" alt=""
                   /></a>
-                </div>
+                  </div>
+                  <a class="footer-link-bt" style="color: #fff;" href="tel:+77767772907"
+                  >+7 (776) 777-29-07</a
+                >
               </div>
             </div>
           </div>

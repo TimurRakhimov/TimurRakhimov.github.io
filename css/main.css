@@ -14,7 +14,7 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: 1500px;
-  padding: 20px 0 0 0;
+
 }
 
 .header-link {
@@ -301,9 +301,7 @@ button {
   margin: 20px 0;
   width: 100%;
 }
-.mapses {
-  display: none;
-}
+ 
 
 /* sectionForm */
 
@@ -552,13 +550,8 @@ a {
   .tobies img {
     width: 100%;
   }
-  .maps {
-    display: none;
-  }
-  .mapses {
-    display: block;
-    width: 100%;
-  }
+ 
+   
   .mapsesTop {
     display: flex;
     justify-content: space-between;
