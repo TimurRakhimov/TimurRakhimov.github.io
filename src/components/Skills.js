@@ -11,7 +11,7 @@ function Skills() {
         {
             category: "Web Development",
             description: "Building responsive and dynamic websites with modern technologies",
-            items: ["HTML", "CSS", "JavaScript", "Django", "AJAX", "PHP"]
+            items: ["HTML", "CSS", "JavaScript", "Django", "AJAX", "PHP", "Node.js"]
         },
         {
             category: "Machine Learning & AI",
@@ -21,12 +21,12 @@ function Skills() {
         {
             category: "Databases",
             description: "Designing and managing structured and unstructured databases",
-            items: ["PostgreSQL", "MongoDB"]
+            items: ["PostgreSQL", "MongoDB", "SQL", "Oracle"]
         },
         {
             category: "Tools & Frameworks",
             description: "Efficient in using tools and frameworks to streamline development",
-            items: ["Git", "React", "Flutter"]
+            items: ["Git", "React", "Flutter", "Roboflow", "CVAT", "Excel"]
         }
     ];
 
