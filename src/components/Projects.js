@@ -21,6 +21,18 @@ function Projects() {
             image: "portfolio.png",
             link: "https://github.com/TimurRakhimov/TimurRakhimov.github.io",
         },
+        {
+            title: "Course Selection Website",
+            description: "A dynamic web application enabling user registration, login, and personalized course management using MongoDB, Express, Angular, and Node.js.",
+            image: "course.png",
+            link: "https://github.com/TimurRakhimov/CourseSelector",
+        },
+        {
+            title: "To-Do List App",
+            description: "A task management application built using Django, featuring user authentication, task categorization, and CRUD functionality.",
+            image: "django.png",
+            link: "https://github.com/TimurRakhimov/DjangoToDoApp",
+        }
     ];
 
     return (
