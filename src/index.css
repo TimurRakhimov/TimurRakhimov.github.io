@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the body spans the full height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #1a202c; /* Match your overall dark theme */
+}
+

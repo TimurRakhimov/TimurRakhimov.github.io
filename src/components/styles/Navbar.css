@@ -1,0 +1,62 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a202c;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #90cdf4;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-links a {
+    font-size: 1rem;
+    color: #a0aec0;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffffff;
+}
+
+.navbar-links a.active {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar-links .divider {
+    color: #4a5568;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

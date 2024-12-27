@@ -1,0 +1,96 @@
+/* Experience.css */
+
+.experience {
+    padding: 80px 20px;
+    background-color: #1a202c;
+    color: white;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #90cdf4;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: #a0aec0;
+    margin-bottom: 40px;
+}
+
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: #2d3748;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #63b3ed;
+    text-align: left;
+}
+
+.company {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #cbd5e0;
+    text-align: left;
+}
+
+.duration {
+    font-style: italic;
+    color: #a0aec0;
+}
+
+.experience-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.experience-card ul li {
+    font-size: 1rem;
+    color: #e2e8f0;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .experience-list {
+        grid-template-columns: 1fr;
+    }
+}
