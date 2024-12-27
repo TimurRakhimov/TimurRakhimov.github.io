@@ -22,7 +22,7 @@ function Navbar() {
                     Skills
                 </Link>
                 <span className="divider"></span>
-                <Link to="contact" spy={true} smooth={true} duration={500} activeClass="active">
+                <Link to="contact" spy={true} smooth={true} duration={500} offset={-50} activeClass="active">
                     Contact
                 </Link>
             </div>
