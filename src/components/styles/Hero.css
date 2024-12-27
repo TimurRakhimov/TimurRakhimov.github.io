@@ -27,7 +27,7 @@
      font-weight: bold;
      margin-bottom: 10px;
      line-height: 1.2; /* Ensure compact line spacing */
-     white-space: nowrap; /* Prevent line break */
+     white-space: break-word; /* Prevent line break */
  }
  
  .hero h2 {
@@ -101,5 +101,8 @@
          max-width: 80%;
          margin-top: 20px;
      }
+     .hero-links {
+        justify-content: center; /* Ensure the icons are centered on mobile */
+    }
  }
  
