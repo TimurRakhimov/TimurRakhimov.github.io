@@ -59,7 +59,9 @@ function Hero() {
                             <img src="linkedin.png" alt="LinkedIn" />
                         </a>
                     </div>
-                    <a href="Timur Rakhimov Resume.pdf" className="hero-button">Resume</a>
+                    <a href="ML.pdf" className="hero-button">ML Resume</a>
+                    <a href="Web.pdf" className="hero-button">Full Stack Resume</a>
+                    <a href="Business Analyst.pdf" className="hero-button">Business Analyst Resume</a>
                 </div>
                 <div className="hero-image">
                     <img src="./me.png" alt="Timur Rakhimov" />

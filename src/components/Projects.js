@@ -7,7 +7,7 @@ function Projects() {
             title: "Foreign Object Detection in Mining",
             description: "Developed a YOLOv8 model to detect foreign objects in mining environments with a 92% True Positive Rate.",
             image: "yolo.png",
-            link: "https://drive.google.com/file/d/1JcOPsMcyBvVGWUHoy7ofv1dCEXk0HECd/view?usp=sharing",
+            link: "",
         },
         {
             title: "Laptop Pricing Prediction",
