@@ -9,9 +9,11 @@ function Experience() {
             duration: "October 2023 - Present",
             logo: "aparti.png",
             responsibilities: [
-                "Managed a team of developers and designers, ensuring timely delivery within budget.",
-                "Integrated third-party services like payment solutions, Yandex Maps, and document verification.",
-                "Developed app wireframes and handled app store submissions.",
+                "Analyzed market trends and user needs to design a mobile app, resulting in a 25% increase in user engagement post-launch.",
+                "Collaborated with stakeholders to gather business requirements and translated them into actionable technical specifications.",
+                "Led a team of 7 developers and designers, achieving 100% on-time project delivery and staying within a $25,000 budget.",
+                "Spearheaded the integration of 3 third-party services, reducing manual operational efforts by 45%.",
+                "Conducted competitive analysis of three market leaders to inform product design, ensuring alignment with industry standards."
             ],
         },
     ];
