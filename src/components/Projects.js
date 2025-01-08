@@ -32,6 +32,12 @@ function Projects() {
             description: "A task management application built using Django, featuring user authentication, task categorization, and CRUD functionality.",
             image: "django.png",
             link: "https://github.com/TimurRakhimov/DjangoToDoApp",
+        },
+        {
+            title: "Football Stats Web App",
+            description: "Designed and developed a responsive web app using React, Redux, and Axios to display football team statistics. Integrated the Football Data API with proxy servers to handle CORS issues and ensure seamless data fetching. Styled the application with CSS and ensured mobile responsiveness using media queries.",
+            image: "rm.png",
+            link: "https://github.com/TimurRakhimov/FotballStats",
         }
     ];
 
