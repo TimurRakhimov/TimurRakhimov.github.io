@@ -160,14 +160,21 @@
     }
 
     .category-button {
-        flex: 1 0 calc(50% - 50px); /* Two buttons per row on smaller screens */
-        max-width: 50%; /* Allow full width if needed */
+        flex: 0 0 40%;
         font-size: 0.8rem;
         padding: 8px 15px;
+        text-wrap: nowrap;
     }
 
     .categories {
         justify-content: flex-start;
         scrollbar-width: none;
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .project-card {
+        width: 90%;
     }
 }
