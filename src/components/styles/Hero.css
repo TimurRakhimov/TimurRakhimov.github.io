@@ -84,13 +84,41 @@
     border-radius: 50px;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.2s;
+    position: relative; /* Required for pseudo-elements */
+    overflow: hidden; /* Prevent the animation from going outside the button */
+    transition: transform 0.2s ease; /* Smooth scaling */
 }
 
-.hero-button:hover {
-    background-color: #2b6cb0;
-    transform: scale(1.05);
+/* Pseudo-element for the hover effect */
+.hero-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2b6cb0; /* Hover effect color */
+    z-index: 0;
+    transition: transform 0.3s ease;
 }
+
+/* Apply the hover animation */
+.hero-button:hover::before {
+    transform: translateX(100%);
+}
+
+/* Ensure the text appears above the animation */
+.hero-button span {
+    position: relative;
+    z-index: 1;
+}
+
+/* Hover scale effect */
+.hero-button:hover {
+    transform: scale(1.05);
+    color: white; /* Keep text color white during hover */
+}
+
 
 .hero-image {
     max-width: 40%;
