@@ -172,6 +172,12 @@
         width: 100%;
         overflow-x: auto;
         scrollbar-width: none;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .categories::-webkit-scrollbar {
+        display: none;
     }
 
     .project-card {
