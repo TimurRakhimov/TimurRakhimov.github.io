@@ -1,26 +1,36 @@
+:root {
+    --size: 20px;
+}
+
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px;
-    color: white;
     height: 100vh;
-    background: linear-gradient(120deg, #2d3748, #1a202c);
-    background-size: 300% 300%;
-    animation: gradientAnimation 6s ease infinite;
     position: relative;
+    z-index: 0; /* Background layer */
+    overflow: hidden;
 }
 
-/* Keyframes for the animated gradient */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+/* The masked background */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from 180deg at 50% 70%, hsla(0, 0%, 98%, 1) 0deg, #eec32d 72deg, #ec4b4b 144deg, #709ab9 216deg, #4dffbf 288deg, hsla(0, 0%, 98%, 1) 1turn);
+    mask: radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% / var(--size) var(--size),
+        url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+    mask-composite: intersect;
+    animation: flicker 20s infinite linear;
+    z-index: 0; /* Behind content */
+}
+
+@keyframes flicker {
+    to {
+        mask-position: 50% 50%, 0 50%;
     }
 }
 
@@ -30,25 +40,31 @@
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
 }
 
 .hero-text {
     max-width: 50%;
+    z-index: 10;
 }
 
 .hero h1 {
-    font-size: 2.5rem; /* Reduced font size */
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
-    line-height: 1.2; /* Ensure compact line spacing */
+    line-height: 1.2;
+    color: #ffffff;
 }
 
 .hero h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #90cdf4;
-    white-space: nowrap; /* Prevents breaking */
-    overflow: hidden; /* Ensures text stays within bounds */
+    white-space: nowrap;
+    overflow: hidden;
     display: inline-block;
 }
 
@@ -56,6 +72,7 @@
     font-size: 1.2rem;
     margin-bottom: 30px;
     line-height: 1.6;
+    color: #ffffff;
 }
 
 .hero-links {
@@ -84,41 +101,14 @@
     border-radius: 50px;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative; /* Required for pseudo-elements */
-    overflow: hidden; /* Prevent the animation from going outside the button */
-    transition: transform 0.2s ease; /* Smooth scaling */
-}
-
-/* Pseudo-element for the hover effect */
-.hero-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #2b6cb0; /* Hover effect color */
-    z-index: 0;
-    transition: transform 0.3s ease;
-}
-
-/* Apply the hover animation */
-.hero-button:hover::before {
-    transform: translateX(100%);
-}
-
-/* Ensure the text appears above the animation */
-.hero-button span {
     position: relative;
-    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.2s ease;
 }
 
-/* Hover scale effect */
 .hero-button:hover {
     transform: scale(1.05);
-    color: white; /* Keep text color white during hover */
 }
-
 
 .hero-image {
     max-width: 40%;
@@ -126,21 +116,30 @@
 
 .hero-image img {
     width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
 }
 
+@media screen and (min-width: 768px) {
+    .hero::before {
+        height: 90%;
+    }
+    
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .hero {
-        height: 900px;
+        height: auto;
+        padding: 40px 20px 60px 20px; /* Reduced top and bottom padding */
     }
+
     .hero-content {
-        margin-top: 100px;
+        margin-top: 20px; /* Reduced top margin */
         flex-direction: column;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 20px; /* Reduced bottom margin */
     }
 
     .hero-text {
@@ -149,11 +148,15 @@
 
     .hero-image {
         max-width: 80%;
-        margin-top: 20px;
+        margin-top: 10px; /* Adjusted margin above the image */
         max-height: 80%;
     }
 
+    .hero-image img {
+        height: auto;
+    }
+
     .hero-links {
-        justify-content: center; /* Ensure the icons are centered on mobile */
+        justify-content: center;
     }
 }
