@@ -52,6 +52,20 @@ function Projects() {
             link: 'https://github.com/TimurRakhimov/Biodiversity',
             category: 'Data Analysis'
         },
+        {
+            title: 'Deadly Volcanoes Analysis',
+            description: 'Conducted a comprehensive analysis of 836 historical volcanic eruptions using Tableau. Visualized critical trends, including fatalities, economic damages, and eruption types, to identify the deadliest volcanoes and their global impacts.',
+            image: 'volcano.png',
+            link: 'https://public.tableau.com/app/profile/timur.rakhimov/viz/Volcanoes_17379347686560/Dashboard1',
+            category: 'Data Analysis'
+        },
+        {
+            title: 'Trees and Income in Metro NYC',
+            description: 'Merged and analyzed three datasets (totaling over 683,000 records) using Tableau to explore the relationship between tree health, density, and income distribution across NYC boroughs. Generated visualizations to highlight disparities in tree health and concentration between affluent and underprivileged areas.',
+            image: 'tree.png',
+            link: 'https://public.tableau.com/app/profile/timur.rakhimov/viz/NYCTreeCensus_17378457227140/Dashboard1',
+            category: 'Data Analysis'
+        }
     ];
 
     const [selectedCategory, setSelectedCategory] = useState("All");
