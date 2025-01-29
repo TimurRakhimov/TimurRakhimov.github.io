@@ -65,6 +65,13 @@ function Projects() {
             image: 'tree.png',
             link: 'https://public.tableau.com/app/profile/timur.rakhimov/viz/NYCTreeCensus_17378457227140/Dashboard1',
             category: 'Data Analysis'
+        },
+        {
+            title: 'Airplane-Wildlife Collisions 2001-2015',
+            description: 'Analyzed data on airplane-wildlife collisions across U.S. airports using Tableau, focusing on economic losses and collision frequencies. Created visualizations to highlight the financial impact and distribution of collisions by species and airport rank.',
+            image: 'airport.png',
+            link: 'https://public.tableau.com/app/profile/timur.rakhimov/viz/Collisions_17381265680190/Dashboard1',
+            category: 'Data Analysis'
         }
     ];
 
