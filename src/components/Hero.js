@@ -60,9 +60,9 @@ function Hero() {
                         </a>
                     </div>
                 </div>
-                <div className="hero-image">
+                {/*<div className="hero-image">
                     <img src="./me.png" alt="Timur Rakhimov" />
-                </div>
+                </div> */}
             </div>
         </section>
     );
