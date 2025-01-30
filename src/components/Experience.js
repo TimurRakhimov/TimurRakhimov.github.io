@@ -16,6 +16,16 @@ function Experience() {
                 "Conducted competitive analysis of three market leaders to inform product design, ensuring alignment with industry standards."
             ],
         },
+        {
+            role: 'Business Analyst Intern',
+            company: 'Custom Ai Power, Vancouver, CA',
+            duration: 'August 2023 - September 2023',
+            logo: 'caip.png',
+            responsibilities: [
+                'Spearheaded the requirement gathering and documentation process for a lead generation solution, ensuring alignment with client needs and technical capabilities.',
+                'Collaborated on the development of an email verification and bouncer tool by analyzing industry pain points, defining product features, and recommending enhancements.'
+            ]
+        }
     ];
 
     return (
