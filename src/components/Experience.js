@@ -6,7 +6,7 @@ function Experience() {
         {
             role: "Project Manager",
             company: "Aparti.kz, Almaty, Kazakhstan",
-            duration: "October 2023 - Present",
+            duration: "Oct 2023 - Feb 2025",
             logo: "aparti.png",
             responsibilities: [
                 "Analyzed market trends and user needs to design a mobile app, resulting in a 25% increase in user engagement post-launch.",
@@ -19,7 +19,7 @@ function Experience() {
         {
             role: 'Business Analyst Intern',
             company: 'Custom Ai Power, Vancouver, CA',
-            duration: 'August 2023 - September 2023',
+            duration: 'Jul 2023 - Sept 2023',
             logo: 'caip.png',
             responsibilities: [
                 'Spearheaded the requirement gathering and documentation process for a lead generation solution, ensuring alignment with client needs and technical capabilities.',
